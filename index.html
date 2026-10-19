@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AdNull — Privacy Policy &amp; Support</title>
+<meta name="description" content="Privacy policy and support for AdNull, the on-device ad blocker for iPhone.">
+<style>
+  :root {
+    --bg: #f6f8f7;
+    --card: #ffffff;
+    --text: #13201b;
+    --muted: #5d6b66;
+    --line: #e3e9e6;
+    --accent: #16a34a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #04100c;
+      --card: #0b1a15;
+      --text: #e8f0ec;
+      --muted: #8fa39b;
+      --line: #183029;
+      --accent: #4ade80;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Noto Sans Arabic", "Geeza Pro", sans-serif;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 22px; }
+  .brand svg { width: 40px; height: 40px; border-radius: 10px; flex: none; }
+  .switch { display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .switch button {
+    border: 0; background: transparent; color: var(--muted);
+    padding: 6px 14px; font: inherit; font-size: 14px; cursor: pointer;
+  }
+  .switch button[aria-pressed="true"] { background: var(--accent); color: #04100c; font-weight: 600; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px; margin-bottom: 16px; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 0 0 8px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0; padding-inline-start: 20px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  .lead { font-size: 18px; font-weight: 600; }
+  footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 24px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 1024 1024" aria-hidden="true">
+        <defs>
+          <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f2b24"/><stop offset="1" stop-color="#030d0a"/></linearGradient>
+          <linearGradient id="sh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#54e387"/><stop offset="1" stop-color="#12994a"/></linearGradient>
+        </defs>
+        <rect width="1024" height="1024" fill="url(#bg)"/>
+        <path d="M512 220 C600 280 720 320 800 330 L800 550 C800 730 660 830 512 880 C364 830 224 730 224 550 L224 330 C304 320 424 280 512 220 Z" fill="url(#sh)"/>
+        <path d="M392 550 L482 640 L640 470" fill="none" stroke="#fff" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      AdNull
+    </div>
+    <div class="switch" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-lang="ar" aria-pressed="false">العربية</button>
+    </div>
+  </header>
+
+  <!-- English -->
+  <main id="en" lang="en" dir="ltr">
+    <div class="card">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: October 19, 2026</p>
+      <p class="lead">AdNull does not collect, store, share, or sell any personal data.</p>
+      <ul>
+        <li>All ad and tracker filtering happens on your device.</li>
+        <li>AdNull uses a local VPN configuration only to inspect DNS lookups. Your browsing traffic is not routed through any server operated by us — we don't run any.</li>
+        <li>DNS lookups for allowed domains are resolved by Cloudflare DNS (1.1.1.1), subject to <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's privacy policy</a>.</li>
+        <li>The app downloads a public blocklist from oisd.nl once a week. No personal information is sent with this request.</li>
+        <li>Statistics (blocked count and recently blocked domains) are stored only on your device and are deleted when you delete the app.</li>
+        <li>AdNull has no accounts, analytics, advertising, or third-party tracking SDKs.</li>
+        <li>AdNull does not change your location or hide your IP address.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Changes</h2>
+      <p>If this policy changes, the updated version will be posted on this page with a new date.</p>
+    </div>
+    <div class="card" id="support">
+      <h2>Support</h2>
+      <p>Questions, problems, or a site that breaks with AdNull on? Email us and we'll get back to you.</p>
+      <p><a href="mailto:TODO-your-email">TODO-your-email</a></p>
+    </div>
+  </main>
+
+  <!-- Arabic -->
+  <main id="ar" lang="ar" dir="rtl" hidden>
+    <div class="card">
+      <h1>سياسة الخصوصية</h1>
+      <p class="updated">آخر تحديث: 19 أكتوبر 2026</p>
+      <p class="lead">لا يجمع AdNull أي بيانات شخصية ولا يخزنها ولا يشاركها ولا يبيعها.</p>
+      <ul>
+        <li>كل فلترة الإعلانات والتتبّع تتم على جهازك.</li>
+        <li>يستخدم AdNull إعداد VPN محلياً لفحص طلبات DNS فقط، ولا يمر تصفّحك عبر أي سيرفر نديره، فليس لدينا سيرفرات أصلاً.</li>
+        <li>طلبات DNS للنطاقات المسموحة تُحلّ عبر Cloudflare DNS ‏(1.1.1.1) وفق <a href="https://www.cloudflare.com/privacypolicy/">سياسة خصوصية Cloudflare</a>.</li>
+        <li>يحمّل التطبيق قائمة حجب عامة من oisd.nl مرة كل أسبوع، دون إرسال أي معلومات شخصية.</li>
+        <li>الإحصائيات (عدد المحجوب وآخر النطاقات المحجوبة) تُحفظ على جهازك فقط وتُحذف عند حذف التطبيق.</li>
+        <li>لا يحتوي AdNull على حسابات أو أدوات تحليل أو إعلانات أو أدوات تتبّع من أطراف ثالثة.</li>
+        <li>لا يغيّر AdNull موقعك ولا يخفي عنوان IP الخاص بك.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>التغييرات</h2>
+      <p>إذا تغيّرت هذه السياسة، ستُنشر النسخة المحدّثة في هذه الصفحة مع تاريخ جديد.</p>
+    </div>
+    <div class="card">
+      <h2>الدعم</h2>
+      <p>عندك سؤال أو مشكلة، أو موقع ما يشتغل مع AdNull؟ راسلنا وبنرد عليك.</p>
+      <p><a href="mailto:TODO-your-email" dir="ltr">TODO-your-email</a></p>
+    </div>
+  </main>
+
+  <footer>© 2026 AdNull</footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.switch button');
+    function show(lang) {
+      document.getElementById('en').hidden = lang !== 'en';
+      document.getElementById('ar').hidden = lang !== 'ar';
+      document.documentElement.lang = lang;
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+    var hash = location.hash.replace('#', '');
+    var start = hash === 'ar' || hash === 'en' ? hash
+      : ((navigator.language || '').toLowerCase().indexOf('ar') === 0 ? 'ar' : 'en');
+    show(start);
+  })();
+</script>
+</body>
+</html>
